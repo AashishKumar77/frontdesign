@@ -16,6 +16,7 @@ module.exports = {
         red1: "#fef2f2",
         red3: "#FFF9F9",
         green: " #00FF00",
+        offwhite: "#F5F5F5",
       },
     },
   },

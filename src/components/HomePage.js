@@ -1,121 +1,141 @@
 import React from "react";
 // import { useNavigate } from "react-router-dom";
-//import n from "../image/n.jpg";
+import pic1 from "../image/pic1.svg";
 
 function HomePage() {
   // const navigate = useNavigate();
   return (
-    <div className="bg-oldlace">
-      <header className="bg-red ">
-        <nav>
-          <ul
-            class=" mb-5 grid-cols-1 md:grid-cols-1 gap-4 flex list-none flex-row flex-wrap border-b-0 pl-0 text-right"
-            role="navlist"
-          >
-            <li role="present">
-              <a
-                class="disabled pointer-events-none my-2 block border-x-0 border-b-1 border-t-0 border-transparent  px-7 pb-3.5 pt-4 text-sm font-serif uppercase leading-tight text-white hover:border-transparent hover:text-white  focus:isolate focus:border-transparent dark:text-neutral-400"
-                data-te-toggle="pill"
-                data-te-target="#tabs-home"
-                data-te-nav-active
-                role="tab"
-                aria-controls="tabs-home"
-                aria-selected="true"
-              >
+    <div className="offwhite">
+      <nav class="bg-red  ">
+        <div class="container  ">
+          <div class="flex ml-2 text-lg items-left justify-between h-16">
+            <div class=" md:flex md:items-center">
+              <a href="#" class="text-white mx-4">
                 Home
               </a>
-            </li>
-            <li role="present">
-              <a
-                href="#"
-                class="focus:border-transparent my-2 block border-x-0 border-b-1 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-sm font-serif uppercase leading-tight text-white hover:isolate hover:text-white hover:border-transparent  focus:isolate data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
-                data-te-toggle="pill"
-                data-te-target="#tabs-profile"
-                role="tab"
-                aria-controls="tabs-profile"
-                aria-selected="false"
-              >
+              <a href="#" class="text-white mx-4">
                 About
               </a>
-            </li>
-            <li role="present">
-              <a
-                class="my-2 block border-x-0 border-b-1 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-sm font-serif uppercase leading-tight text-white hover:isolate  hover:text-white hover:border-transparent focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
-                data-te-toggle="pill"
-                data-te-target="#tabs-messages"
-                role="tab"
-                aria-controls="tabs-messages"
-                aria-selected="false"
-              >
-                Gallery
+              <a href="#" class="text-white mx-4">
+                Services
               </a>
-            </li>
-            <li role="present">
-              <a
-                class="my-2 block border-x-0 border-b-1 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-sm font-serif uppercase leading-tight text-white hover:isolate hover:border-transparent hover:text-white focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
-                data-te-toggle="pill"
-                data-te-target="#tabs-contact"
-                role="tab"
-                aria-controls="tabs-contact"
-                aria-selected="false"
-              >
-                Blog
+              <a href="#" class="text-white mx-4">
+                Contact
               </a>
-            </li>
-            <li role="present">
-              <a
-                class="my-2 block border-x-0 border-b-1 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-sm font-serif uppercase leading-tight text-white hover:isolate hover:border-transparent hover:text-white focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
-                data-te-toggle="pill"
-                data-te-target="#tabs-contact"
-                role="tab"
-                aria-controls="tabs-contact"
-                aria-selected="false"
-              >
-                contact
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="bg-oldlace font-Raleway p-9 lg:text-xl sm:px-16 lg:px-48 ">
-            <h2
-              className="decoration-8 ml-10 body-font leading-snug font-raleway not-italic text-5xl font-semi-bold
-"
-            >
-              Nothing Is More
-              <div class="whitespace-pre ml-1 py-2">
-                {" "}
-                Important Than<strong className="text-red"> Truth</strong>
-              </div>
-              <strong className="text-red py-3 ml-4"> In a World </strong> That
-              Lies.
-            </h2>
+            </div>
           </div>
-          <div class="bg-red p-9 ">02</div>
+        </div>
+      </nav>
+
+      <div className="bg-offwhite">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-offwhite  font-Raleway p-9 lg:text-xl   sm:px-16 lg:px-24 ">
+            <div className="col-md-6 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
+              <h1 className=" font-Raleway text-5xl mt-48  font-bold ml-1">
+                Nothing Is More
+              </h1>
+              <h2 className="my-3 font-Raleway  font-bold text-5xl">
+                Important Than
+                <strong className="brand-name  font-bold font-Raleway p-2 text-4xl text-red">
+                  Truth
+                </strong>
+              </h2>
+              <h2 className="my-3 font-Raleway font-bold  text-5xl">
+                <strong className="brand-name font-bold text-red ">
+                  {" "}
+                  In a World
+                </strong>{" "}
+                That Lies
+              </h2>
+            </div>
+          </div>
+          <div class="  p-2 mt-0 mt-0 ">
+            <img
+              className="w-auto h-auto ml-20 mt-0 bg-offwhite"
+              src={pic1}
+            ></img>
+          </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-offwhite">
           <div className="bg-yellow p-9 mt-6 ">03</div>
-          <div className="bg-Amber p-9 mt-6 ">04</div>
+          <div className=" p-9 mt-6 ">
+            <div className="col-md-6 pt-5 pt-lg-0  justify-content-center ">
+              <h2 className="font-inter text-4xl font-semi-bold ml-3">
+                Our <strong className="text-red font-semi-bold">mission</strong>
+              </h2>
+              <h2 className="my-1 p-5">
+                We bring truth and transparency to a world filled with lies. Use
+                our app as your tool for knowledge and equip yourself with the
+                information you need to make wise decisions in any aspect of
+                your life as relationships,business etc.
+              </h2>
+              <div className="mt-3">
+                <button className="ml-5 text-white bg-red rounded-full w-20 h-8">
+                  Join Us
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="bg-red mt-8 p-9 ">05</div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-offwhite">
+          <div className=" p-9 mt-5  ">
+            <div className="col-md-6 pt-5 pt-lg-0  justify-content-center  ">
+              <h2 className="font-inter text-4xl font-semi-bold ml-3">
+                How it <strong className="text-red font-semi-bold">work</strong>
+              </h2>
+              <h2 className="my-1 p-5">
+                We bring truth and transparency to a world filled with lies. Use
+                our app as your tool for knowledge and equip yourself with the
+                information you need to make wise decisions in any aspect of
+                your life as relationships,business etc.
+              </h2>
+            </div>
+            <div className="mt-3">
+              <button className="ml-5 text-white bg-red rounded-full w-20 h-8">
+                Join Us
+              </button>
+            </div>
+          </div>
           <div className="bg-brown mt-8 p-9 ">06</div>
         </div>
       </div>
-      <div className=" mt-16 h-3/5 ">
-        <div className="text-white bg-black text-center p-14 ">img</div>
+      <div className="mt-0 h-2/5">
+        <div className="ml-2 text-black bg-red3 text-center p-14 font-inter text-4xl font-semi-bold ">
+          Video How <strong className="text-red font-xl">App work</strong>
+          <div class="flex justify-center mt-16 ml-0">
+            <img
+              src="https://growthbusiness-production.s3.amazonaws.com/uploads/2022/10/Screen-Shot-2017-10-26-at-16.36.01.png"
+              alt=" Image"
+              class="w-2/4 h-70 sm:max-w-none sm:mx-lg border-solid border-4 border-offwhite"
+            ></img>
+          </div>
+        </div>
       </div>
-      <div className=" grid-lg-12 bg-yellow p-20 pt-32 mt-20 text-center ">
+      <div className=" grid-lg-12 bg-yellow p-20 pt-32 mt-15 text-center ">
         app
       </div>
-      <div className="bg-green  text-center">
-        <h2 className="">user</h2>
-        <div className="fluid grid grid-rows-4  p-14 h-4/5 bg-red grid grid-cols-1 md:grid-cols-2 gap-4 ">
-          <div className="bg-yellow p-12 ml-3">t1</div>
+      <div className="col-md-6 pt-5 pt-lg-0 bg-offwhite justify-content-center  ">
+        <h2 className="font-inter text-center text-4xl font-semi-bold ml-3">
+          User <strong className="text-red font-semi-old">Stories</strong>
+        </h2>
+
+        <div className="fluid grid grid-rows-4  p-14 h-4/5  grid grid-cols-1 md:grid-cols-2 gap-4 ">
+          <div className=" p-5 mt-0 py-1  ">
+            <div className="col-md-6 pt-5 pt-lg-0  justify-content-center  ">
+              <h2 className="font-inter text-4xl font-semi-bold ml-3">
+                Gate of{" "}
+                <strong className="text-red font-semi-bold">Truths</strong>
+              </h2>
+              <h2 className="my-1 p-5">
+                The Gate of Truth is a metaphysical structure which floats in an
+                endless white expanse, with two doors that appear like a pair of
+                giant stone tablets with a mural engraved on them. There doesn|
+                appear to be anything behind the structure, but when the doors
+                open it reveals a dimension of information behind them.
+              </h2>
+            </div>
+          </div>
           <div className="bg-black text-white ml-3">i1</div>
           <div className="bg-green p-12 ml-3">i2</div>
           <div className="bg-brown p-12 ml-3">t2</div>
