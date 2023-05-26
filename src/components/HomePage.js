@@ -1,12 +1,20 @@
 import React from "react";
 // import { useNavigate } from "react-router-dom";
 import pic1 from "../image/pic1.svg";
+import Group9 from "../image/Group 9.svg";
+import Frame from "../image/Frame.svg";
+import googleplaywhite from "../image/google-play-white.svg";
+import appstore from "../image/app-store.svg";
+import Group11 from "../image/Group 11.svg";
+import Group12 from "../image/Group 12.svg";
+import iphone2 from "../image/iphone2.jpg";
+import Maskgroup from "../image/Mask group.svg";
 
 function HomePage() {
   // const navigate = useNavigate();
   return (
-    <div className="offwhite">
-      <nav class="bg-red  ">
+    <div className="">
+      <nav class="bg-red-500  ">
         <div class="container  ">
           <div class="flex ml-2 text-lg items-left justify-between h-16">
             <div class=" md:flex md:items-center">
@@ -26,22 +34,44 @@ function HomePage() {
           </div>
         </div>
       </nav>
-
-      <div className="bg-offwhite">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="bg-offwhite  font-Raleway p-9 lg:text-xl   sm:px-16 lg:px-24 ">
-            <div className="col-md-6 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
-              <h1 className=" font-Raleway text-5xl mt-48  font-bold ml-1">
+      <div className="">
+        {/* <div class="grid grid-cols-2 gap-4">
+          <div className="col-md-6 pt-lg-0  p-10 d-flex justify-content-center ">
+            <h1 className=" font-Raleway text-6xl font-bold ml-1">
+              Nothing Is More
+            </h1>
+            <h2 className="my-3 font-Raleway  font-bold text-6xl">
+              Important Than
+              <strong className="brand-name  font-bold font-Raleway p-2 text-6xl text-red">
+                Truth
+              </strong>
+            </h2>
+            <h2 className="my-3 font-Raleway font-bold  text-6xl">
+              <strong className="brand-name font-bold text-red ">
+                {" "}
+                In a World
+              </strong>{" "}
+              That Lies
+            </h2>
+          </div>
+          <div className="col-md-6 pt-lg-0  p-10  justify-content-center flex-column">
+            <img className=" mt-0 ml-0 " src={pic1} />
+          </div>
+        </div> */}
+        <div class="grid grid-cols-2 gap-4 bg-gradient-to-b from-red-200 to-white">
+          <div class="bg-gray-200">
+            <div className="col-md-6  mt p-10 mt-56 justify-content-center ">
+              <h1 className=" font-Raleway text-6xl font-bold ml-1">
                 Nothing Is More
               </h1>
-              <h2 className="my-3 font-Raleway  font-bold text-5xl">
+              <h2 className="my-3 font-Raleway  font-bold text-6xl">
                 Important Than
-                <strong className="brand-name  font-bold font-Raleway p-2 text-4xl text-red">
+                <strong className="brand-name  font-bold font-Raleway p-2 text-6xl text-red-500">
                   Truth
                 </strong>
               </h2>
-              <h2 className="my-3 font-Raleway font-bold  text-5xl">
-                <strong className="brand-name font-bold text-red ">
+              <h2 className="my-3 font-Raleway font-bold  text-6xl">
+                <strong className="brand-name font-bold text-red-500">
                   {" "}
                   In a World
                 </strong>{" "}
@@ -49,19 +79,19 @@ function HomePage() {
               </h2>
             </div>
           </div>
-          <div class="  p-2 mt-0 mt-0 ">
-            <img
-              className="w-auto h-auto ml-20 mt-0 bg-offwhite"
-              src={pic1}
-            ></img>
+          <div class="bg-gray-300">
+            <div className="col-lg-6 order-1 order-lg-2 header-img mt-[-72px]">
+              <img src={pic1} />
+            </div>
           </div>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-offwhite">
-          <div className="bg-yellow p-9 mt-6 ">03</div>
-          <div className=" p-9 mt-6 ">
+        <div class="grid grid-cols-1 bg-offwhite md:grid-cols-2 gap-4">
+          <div className=" p-1 mt-16  ">
+            <img className="  ml-20 w-72 " src={Group9} />
+          </div>
+          <div className=" p-9 mt-2 ">
             <div className="col-md-6 pt-5 pt-lg-0  justify-content-center ">
-              <h2 className="font-inter text-4xl font-semi-bold ml-3">
+              <h2 className="font-inter text-6xl font-semi-bold ml-3">
                 Our <strong className="text-red font-semi-bold">mission</strong>
               </h2>
               <h2 className="my-1 p-5">
@@ -78,10 +108,10 @@ function HomePage() {
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-offwhite">
-          <div className=" p-9 mt-5  ">
-            <div className="col-md-6 pt-5 pt-lg-0  justify-content-center  ">
-              <h2 className="font-inter text-4xl font-semi-bold ml-3">
+        <div class="grid grid-cols-1 bg-offwhite  md:grid-cols-2 gap-4">
+          <div className=" p-9 mt-2  ">
+            <div className="col-md-6 pt-5 pt-lg-0 mt-2 justify-content-center  ">
+              <h2 className="font-inter text-6xl font-semi-bold ml-3">
                 How it <strong className="text-red font-semi-bold">work</strong>
               </h2>
               <h2 className="my-1 p-5">
@@ -97,10 +127,12 @@ function HomePage() {
               </button>
             </div>
           </div>
-          <div className="bg-brown mt-8 p-9 ">06</div>
+          <div className=" mt-8 bg-offwhite p-9 mb-12">
+            <img className="  ml-18 w-96 h-full " src={Frame} />
+          </div>
         </div>
       </div>
-      <div className="mt-0 h-2/5">
+      <div className="mt-0  h-2/5">
         <div className="ml-2 text-black bg-red3 text-center p-14 font-inter text-4xl font-semi-bold ">
           Video How <strong className="text-red font-xl">App work</strong>
           <div class="flex justify-center mt-16 ml-0">
@@ -112,19 +144,131 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className=" grid-lg-12 bg-yellow p-20 pt-32 mt-15 text-center ">
-        app
+      <div className=" grid-lg-12 text-white font-Raleway text-4xl bg-black p-20 pt-14 font-bold mt-20 text-center ">
+        <h2 className="">Download the App</h2>
+        <p className="font-medium text-sm p-6">
+          {" "}
+          The Gate of Truth is a metaphysical structure which floats in an
+          endless white expanse, with two doors that <br />
+          appear like a pair of giant stone tablets with a mural engraved on
+          them.
+          <div class="flex justify-center mt-11 ml-18">
+            <img
+              src={googleplaywhite}
+              alt=" Image"
+              class="w-48  sm:max-w-none sm:mx-lg border-solid border-4 border-offwhite"
+            ></img>
+            <img
+              src={appstore}
+              alt=" Image"
+              class="w-48 ml-6 sm:max-w-none sm:mx-lg border-solid border-4 border-offwhite"
+            ></img>
+          </div>
+        </p>
       </div>
-      <div className="col-md-6 pt-5 pt-lg-0 bg-offwhite justify-content-center  ">
-        <h2 className="font-inter text-center text-4xl font-semi-bold ml-3">
+
+      <div className="col-md-6 pt-5 pt-lg-0 bg-offwhite  justify-content-center   ">
+        <h2 className="font-inter mt-24 text-center text-6xl font-semi-bold ml-3">
           User <strong className="text-red font-semi-old">Stories</strong>
         </h2>
+        <div class="grid grid-cols-1   md:grid-cols-2 gap-4">
+          <div className=" p-9 mt-2  ">
+            <div className="col-md-6 pt-5 pt-lg-0 mt-48 justify-content-center  ">
+              <h2 className="font-inter text-6xl font-semi-bold ml-3">
+                Gate Of{" "}
+                <strong className="text-red font-semi-bold">Truths</strong>
+              </h2>
+              <h2 className="my-1 p-5">
+                We bring truth and transparency to a world filled with lies. Use
+                our app as your tool for knowledge and equip yourself with the
+                information you need to make wise decisions in any aspect of
+                your life as relationships,business etc.
+              </h2>
+            </div>
+          </div>
+          <div className=" mt-8 p-9 mb-12">
+            <img className="  ml-18 w-5/6 h-full " src={Group11} />
+          </div>
+        </div>
+        <div class="grid grid-cols-1  md:grid-cols-2 gap-4 ">
+          <div className=" p-1 mt-0  ">
+            <img className=" ml-20 w-5/6 " src={Group12} />
+          </div>
+          <div className=" p-9 mt-24 ">
+            <div className="col-md-6 pt-5 pt-lg-0  justify-content-center ">
+              <h2 className="font-inter text-6xl font-semi-bold ml-3">
+                Gate Of{" "}
+                <strong className="text-red font-semi-bold">Truths</strong>
+              </h2>
+              <h2 className="my-1 p-5">
+                We bring truth and transparency to a world filled with lies. Use
+                our app as your tool for knowledge and equip yourself with the
+                information you need to make wise decisions in any aspect of
+                your life as relationships,business etc.
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1   md:grid-cols-2 gap-4">
+          <div className=" p-9 mt-2  ">
+            <div className="col-md-6 pt-5 pt-lg-0   mt-48 justify-content-center  ">
+              <h2 className="font-inter text-6xl font-semi-bold ml-3">
+                Gate Of{" "}
+                <strong className="text-red font-semi-bold">Truths</strong>
+              </h2>
+              <h2 className="my-1 p-5">
+                We bring truth and transparency to a world filled with lies. Use
+                our app as your tool for knowledge and equip yourself with the
+                information you need to make wise decisions in any aspect of
+                your life as relationships,business etc.
+              </h2>
+            </div>
+          </div>
+          <div className=" mt-8  p-9 mb-12">
+            <img className="  ml-18 w-5/6 h-full " src={Group11} />
+          </div>
 
-        <div className="fluid grid grid-rows-4  p-14 h-4/5  grid grid-cols-1 md:grid-cols-2 gap-4 ">
-          <div className=" p-5 mt-0 py-1  ">
-            <div className="col-md-6 pt-5 pt-lg-0  justify-content-center  ">
-              <h2 className="font-inter text-4xl font-semi-bold ml-3">
-                Gate of{" "}
+          <div className="   font-Inter p-12 ml-6">
+            <h2 className="font-inter text-6xl font-semi-bold ml-3">
+              Create Your <br />
+              <strong className="text-red">Own Story</strong>
+            </h2>
+            <h2 className="my-1 p-5">
+              The Gate of Truth is a metaphysical structure which floats in an
+              <br />
+              endless white expanse, with two doors that appear like a pair of
+              <br />
+              giant stone tablets with a mural engraved on them.
+            </h2>
+            <h3 className="text-red ml-5 font-bold">Download the App</h3>
+            <div class="flex  bg-black mt-4 ml-6 w-52">
+              <img
+                src={googleplaywhite}
+                alt=" Image"
+                class="w-24  sm:max-w-none sm:mx-lg border-solid border-2 border-offwhite"
+              ></img>
+              <img
+                src={appstore}
+                alt=" Image"
+                class="w-24 ml-6 -2 sm:max-w-none sm:mx-lg border-solid border-4 border-offwhite"
+              ></img>
+            </div>
+          </div>
+          {/* </div> */}
+
+          <div className="  p-4 ml-3 h-96 relative">
+            <img
+              class="absolute  top-0 left-8 h-auto w-3/4 mt-[-25px]"
+              src={iphone2}
+            />
+          </div>
+        </div>
+
+        {/* <div className="fluid grid grid-rows-4  p-14   grid grid-cols-1 md:grid-cols-2 gap-4 ">
+          <div className=" p-9 mt-2  ">
+            <div className="col-md-6 pt-5 pt-lg-0 mt-2 justify-content-center  ">
+              <h2 className="font-inter text-6xl font-semi-bold ml-3">
+                Gate Of{" "}
                 <strong className="text-red font-semi-bold">Truths</strong>
               </h2>
               <h2 className="my-1 p-5">
@@ -136,31 +280,52 @@ function HomePage() {
               </h2>
             </div>
           </div>
-          <div className="bg-black text-white ml-3">i1</div>
-          <div className="bg-green p-12 ml-3">i2</div>
-          <div className="bg-brown p-12 ml-3">t2</div>
+          <div className=" text-white ml-1   py-1 ">
+            <img className="  ml-2 w-5/6 " src={Group11} />
+          </div>
+
+          <div className="p-5   ml-3">
+            <img className="  ml-2 w-5/6 py-1 " src={Group12} />
+          </div>
+
+          <div className=" p-12 ml-3">
+            <div className=" p-9 mt-24  ">
+              <div className="col-md-6 pt-5 pt-lg-0 mt-2 justify-content-center  ">
+                <h2 className="font-inter text-6xl font-semi-bold ml-3">
+                  Gate Of{" "}
+                  <strong className="text-red font-semi-bold">Truths</strong>
+                </h2>
+                <h2 className="my-1 p-5">
+                  The Gate of Truth is a metaphysical structure which floats in
+                  an endless white expanse, with two doors that appear like a
+                  pair of giant stone tablets with a mural engraved on them.
+                  There doesn| appear to be anything behind the structure, but
+                  when the doors open it reveals a dimension of information
+                  behind them.
+                </h2>
+              </div>
+            </div>
+          </div>
           <div className="bg-yellow p-12 ml-3">t3</div>
           <div className="bg-green p-12 ml-3">i3</div>
           <div className="bg-green p-12 ml-3">c1</div>
           <div className="bg-yellow p-12 ml-3">m1</div>
-        </div>
+        </div>  */}
       </div>
-      <div class="bg-yellow  p-8  ">
+      {/* <div class="bg-yellow  p-8  ">
         <h2 className="p-4 ml-32 ">still have</h2>
 
         <div className="bg-yellow ">
-          {/* <div className="grid grid-rows-3 ml-48 bg-red w-3/4"> */}
           <h2 className="p-9 mt-12 ml-5 mr-5 rounded-lg bg-green">Why need</h2>
           <h2 className="p-9 mt-12 ml-5 mr-5 rounded-lg bg-green">Why need</h2>
           <h2 className="p-9 mt-12 ml-5 mr-5 mb-9 rounded-lg bg-green">
             Why need
           </h2>
         </div>
-      </div>
-      {/* </div> */}
+      </div> */}
 
       {/* footer  */}
-      <div className="bg-green  p-2 ">
+      {/* <div className="bg-green  p-2 ">
         <div className="bg-brown p-12 text-center mt-1 pt-2">
           <h2 className="ml-28">logo</h2>
           <p>
@@ -196,10 +361,10 @@ function HomePage() {
             </ul>
           </p>
         </div>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
-        {/* <div class="bg-red p-4">Row 1, Column 1</div>
-        <div class="bg-green p-4">Row 1, Column 2</div> */}
+      </div> */}
+      {/* <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
+        <div class="bg-red p-4">Row 1, Column 1</div>
+        <div class="bg-green p-4">Row 1, Column 2</div> 
         <div class="bg-black text-white p-4">
           <ul
             class="mb-5 flex list-none flex-row flex-wrap border-b-0 pl-0 text-right"
@@ -273,7 +438,7 @@ function HomePage() {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
