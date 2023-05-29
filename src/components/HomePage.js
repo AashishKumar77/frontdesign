@@ -8,7 +8,8 @@ import appstore from "../image/app-store.svg";
 import Group11 from "../image/Group 11.svg";
 import Group12 from "../image/Group 12.svg";
 import iphone2 from "../image/iphone2.jpg";
-import Maskgroup from "../image/Mask group.svg";
+// import Maskgroup from "../image/Mask group.svg";
+import gotlogo from "../image/gotlogo.jpg";
 
 function HomePage() {
   // const navigate = useNavigate();
@@ -16,8 +17,8 @@ function HomePage() {
     <div className="">
       <nav class="bg-red-500  ">
         <div class="container  ">
-          <div class="flex ml-2 text-lg items-left justify-between h-16">
-            <div class=" md:flex md:items-center">
+          <div class="flex ml-2 text-lg items-left   justify-between h-16">
+            <div class=" md:flex md:items-center ">
               <a href="#" class="text-white mx-4">
                 Home
               </a>
@@ -31,6 +32,8 @@ function HomePage() {
                 Contact
               </a>
             </div>
+
+            <img className="  " src={gotlogo}></img>
           </div>
         </div>
       </nav>
@@ -58,41 +61,47 @@ function HomePage() {
             <img className=" mt-0 ml-0 " src={pic1} />
           </div>
         </div> */}
-        <div class="grid grid-cols-2 gap-4 bg-gradient-to-b from-red-200 to-white">
+
+        <div class="grid grid-cols-2 gap-4 bg-gradient-to-b from-red-100 to-white">
           <div class="bg-gray-200">
-            <div className="col-md-6  mt p-10 mt-56 justify-content-center ">
-              <h1 className=" font-Raleway text-6xl font-bold ml-1">
+            <div class="col-md-6 mt p-10 mt-56 justify-content-center">
+              <h1 class="font-Raleway text-6xl font-bold ml-1">
                 Nothing Is More
               </h1>
-              <h2 className="my-3 font-Raleway  font-bold text-6xl">
+              <h2 class="my-3 font-Raleway font-bold text-6xl">
                 Important Than
-                <strong className="brand-name  font-bold font-Raleway p-2 text-6xl text-red-500">
+                <strong class="brand-name font-bold font-Raleway p-2 text-6xl text-red-500">
                   Truth
                 </strong>
               </h2>
-              <h2 className="my-3 font-Raleway font-bold  text-6xl">
-                <strong className="brand-name font-bold text-red-500">
-                  {" "}
+              <h2 class="my-3 font-Raleway font-bold text-6xl">
+                <strong class="brand-name font-bold text-red-500">
                   In a World
-                </strong>{" "}
+                </strong>
                 That Lies
               </h2>
             </div>
           </div>
-          <div class="bg-gray-300">
-            <div className="col-lg-6 order-1 order-lg-2 header-img mt-[-72px]">
-              <img src={pic1} />
+          {/* <div class="grid grid-cols-2 md:grid-cols-1 gap-2">
+            <div class="col-lg-6">
+              <img src={pic1} className="max-w-full h-auto"></img>
+            </div>
+          </div> */}
+          <div class="grid grid-cols-2 md:grid-cols-1 gap-2">
+            <div class="col-lg-6">
+              <img src={pic1} className="max-w-full h-auto "></img>
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-1 bg-offwhite md:grid-cols-2 gap-4">
+        <div class="grid grid-cols-1  md:grid-cols-2 gap-4">
           <div className=" p-1 mt-16  ">
-            <img className="  ml-20 w-72 " src={Group9} />
+            <img className="  ml-20 w-72 mt-1" src={Group9} />
           </div>
           <div className=" p-9 mt-2 ">
             <div className="col-md-6 pt-5 pt-lg-0  justify-content-center ">
               <h2 className="font-inter text-6xl font-semi-bold ml-3">
-                Our <strong className="text-red font-semi-bold">mission</strong>
+                Our{" "}
+                <strong className="text-red-500 font-semi-bold">mission</strong>
               </h2>
               <h2 className="my-1 p-5">
                 We bring truth and transparency to a world filled with lies. Use
@@ -101,18 +110,19 @@ function HomePage() {
                 your life as relationships,business etc.
               </h2>
               <div className="mt-3">
-                <button className="ml-5 text-white bg-red rounded-full w-20 h-8">
+                <button className="ml-5 text-white bg-red-500 rounded-full w-20 h-8">
                   Join Us
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-1 bg-offwhite  md:grid-cols-2 gap-4">
-          <div className=" p-9 mt-2  ">
-            <div className="col-md-6 pt-5 pt-lg-0 mt-2 justify-content-center  ">
+        <div class="grid grid-cols-1  mt-[-48px]  md:grid-cols-2 gap-4">
+          <div className=" p-9 mt-6  ">
+            <div className="col-md-6 pt-5 pt-lg-0 mt-16 justify-content-center  ">
               <h2 className="font-inter text-6xl font-semi-bold ml-3">
-                How it <strong className="text-red font-semi-bold">work</strong>
+                How it{" "}
+                <strong className="text-red-500 font-semi-bold">work</strong>
               </h2>
               <h2 className="my-1 p-5">
                 We bring truth and transparency to a world filled with lies. Use
@@ -122,19 +132,19 @@ function HomePage() {
               </h2>
             </div>
             <div className="mt-3">
-              <button className="ml-5 text-white bg-red rounded-full w-20 h-8">
+              <button className="ml-5 text-white bg-red-500 rounded-full w-20 h-8">
                 Join Us
               </button>
             </div>
           </div>
-          <div className=" mt-8 bg-offwhite p-9 mb-12">
+          <div className=" mt-16   p-9 mb-12">
             <img className="  ml-18 w-96 h-full " src={Frame} />
           </div>
         </div>
       </div>
-      <div className="mt-0  h-2/5">
-        <div className="ml-2 text-black bg-red3 text-center p-14 font-inter text-4xl font-semi-bold ">
-          Video How <strong className="text-red font-xl">App work</strong>
+      <div className="mt-0 mt-[-48px] h-2/5">
+        <div className="ml-2 text-black bg-redLight text-center p-14 font-inter text-4xl font-semi-bold ">
+          Video How <strong className="text-red-500 font-xl">App work</strong>
           <div class="flex justify-center mt-16 ml-0">
             <img
               src="https://growthbusiness-production.s3.amazonaws.com/uploads/2022/10/Screen-Shot-2017-10-26-at-16.36.01.png"
@@ -166,17 +176,16 @@ function HomePage() {
           </div>
         </p>
       </div>
-
-      <div className="col-md-6 pt-5 pt-lg-0 bg-offwhite  justify-content-center   ">
+      <div className="col-md-5 pt-5 pt-lg-0 mt-[-48px]  justify-content-center   ">
         <h2 className="font-inter mt-24 text-center text-6xl font-semi-bold ml-3">
-          User <strong className="text-red font-semi-old">Stories</strong>
+          User <strong className="text-red-500 font-semi-old">Stories</strong>
         </h2>
-        <div class="grid grid-cols-1   md:grid-cols-2 gap-4">
+        <div class="grid grid-cols-1  mt-[-150px]  md:grid-cols-2 gap-4">
           <div className=" p-9 mt-2  ">
             <div className="col-md-6 pt-5 pt-lg-0 mt-48 justify-content-center  ">
               <h2 className="font-inter text-6xl font-semi-bold ml-3">
                 Gate Of{" "}
-                <strong className="text-red font-semi-bold">Truths</strong>
+                <strong className="text-red-500 font-semi-bold">Truths</strong>
               </h2>
               <h2 className="my-1 p-5">
                 We bring truth and transparency to a world filled with lies. Use
@@ -186,7 +195,7 @@ function HomePage() {
               </h2>
             </div>
           </div>
-          <div className=" mt-8 p-9 mb-12">
+          <div className="  p-9 mb-12 mt-[-96px">
             <img className="  ml-18 w-5/6 h-full " src={Group11} />
           </div>
         </div>
@@ -194,11 +203,11 @@ function HomePage() {
           <div className=" p-1 mt-0  ">
             <img className=" ml-20 w-5/6 " src={Group12} />
           </div>
-          <div className=" p-9 mt-24 ">
+          <div className=" p-9 mt-24 mt-[-4px] ">
             <div className="col-md-6 pt-5 pt-lg-0  justify-content-center ">
               <h2 className="font-inter text-6xl font-semi-bold ml-3">
                 Gate Of{" "}
-                <strong className="text-red font-semi-bold">Truths</strong>
+                <strong className="text-red-500 font-semi-bold">Truths</strong>
               </h2>
               <h2 className="my-1 p-5">
                 We bring truth and transparency to a world filled with lies. Use
@@ -209,12 +218,12 @@ function HomePage() {
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-1   md:grid-cols-2 gap-4">
+        <div class="grid grid-cols-1  mt-[-160px] md:grid-cols-2 gap-4">
           <div className=" p-9 mt-2  ">
             <div className="col-md-6 pt-5 pt-lg-0   mt-48 justify-content-center  ">
               <h2 className="font-inter text-6xl font-semi-bold ml-3">
                 Gate Of{" "}
-                <strong className="text-red font-semi-bold">Truths</strong>
+                <strong className="text-red-500 font-semi-bold">Truths</strong>
               </h2>
               <h2 className="my-1 p-5">
                 We bring truth and transparency to a world filled with lies. Use
@@ -224,14 +233,14 @@ function HomePage() {
               </h2>
             </div>
           </div>
-          <div className=" mt-8  p-9 mb-12">
+          <div className=" mt-8 mt-[-48px]  p-9 mb-12">
             <img className="  ml-18 w-5/6 h-full " src={Group11} />
           </div>
 
-          <div className="   font-Inter p-12 ml-6">
+          <div className="   font-Inter p-12 ml-12 mt-[-56px]">
             <h2 className="font-inter text-6xl font-semi-bold ml-3">
               Create Your <br />
-              <strong className="text-red">Own Story</strong>
+              <strong className="text-red-500">Own Story</strong>
             </h2>
             <h2 className="my-1 p-5">
               The Gate of Truth is a metaphysical structure which floats in an
@@ -254,11 +263,18 @@ function HomePage() {
               ></img>
             </div>
           </div>
+
           {/* </div> */}
 
-          <div className="  p-4 ml-3 h-96 relative">
+          {/* <div className=" mt-24 p-4   relative">
             <img
-              class="absolute  top-0 left-8 h-auto w-3/4 mt-[-25px]"
+              class="absolute  top-0 left-8 h-screen overflow-hidden  w-3/4 mt-[-186px] "
+              src={iphone2}
+            />
+          </div> */}
+          <div className="mt-0 p-4 relative">
+            <img
+              class=" top-0 ml-16 h-[calc(100vh-188px)] max-w-[75%] overflow-hidden"
               src={iphone2}
             />
           </div>
@@ -312,133 +328,235 @@ function HomePage() {
           <div className="bg-yellow p-12 ml-3">m1</div>
         </div>  */}
       </div>
-      {/* <div class="bg-yellow  p-8  ">
-        <h2 className="p-4 ml-32 ">still have</h2>
 
-        <div className="bg-yellow ">
-          <h2 className="p-9 mt-12 ml-5 mr-5 rounded-lg bg-green">Why need</h2>
-          <h2 className="p-9 mt-12 ml-5 mr-5 rounded-lg bg-green">Why need</h2>
-          <h2 className="p-9 mt-12 ml-5 mr-5 mb-9 rounded-lg bg-green">
-            Why need
+      <div class="  p-12 mt-32 bg-cream-500  ">
+        <h2 className="p-4 ml-18 bg-cream p-6 mt-[-64px] font-Inter text-6xl">
+          <strong className="text-red-500 font-semi-bold "> Still Have</strong>{" "}
+          Questions ?
+        </h2>
+
+        <div className="">
+          <h2 className="p-9 mt-12 ml-6 mr-5 rounded-3xl  shadow-white bg-white font-Inter text-4xl text-red-500">
+            why do you need an FAQ page ?
+            <p className="text-black text-xl p-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </h2>
+          <h2 className="p-9 mt-12 ml-6 mr-5 rounded-3xl  shadow-white bg-white font-Inter text-4xl text-red-500">
+            why do you need an FAQ page ?
+            {/* <p className="text-black text-xl p-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p> */}
+          </h2>
+          <h2 className="p-9 mt-12 ml-6 mr-5 rounded-3xl  shadow-white bg-white font-Inter text-4xl text-red-500">
+            why do you need an FAQ page ?
+            {/* <p className="text-black text-xl p-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p> */}
           </h2>
         </div>
-      </div> */}
-
+      </div>
       {/* footer  */}
-      {/* <div className="bg-green  p-2 ">
-        <div className="bg-brown p-12 text-center mt-1 pt-2">
-          <h2 className="ml-28">logo</h2>
+      <footer>
+        <div className="bg-red-500 p-12 flex items-center justify-center mt-1 pt-2">
+          <img className=" " src={gotlogo}></img>
+        </div>
+        <div className="bg-red-500">
           <p>
-            <ul
-              class="mb-5 flex list-none flex-row flex-wrap border-b-5   "
-              role="navlist"
-            >
+            <ul class=" ml-12  flex list-none flex-row flex-wrap border-b-5   ">
               <li role="present">
-                <a class=" grid grid-cols-1 md:grid-cols-1 gap-4 disabled pointer-events-none my-2 block border-x-0 border-b-1 border-t-0 border-transparent  px-1 pb-3.5 pt-4 text-sm font-serif  ml-32 leading-tight text-black hover:border-transparent hover:text-white  focus:isolate focus:border-transparent dark:text-neutral-400">
+                <a class=" ml-18  grid grid-cols-1 md:grid-cols-1 text-white  gap-4 disabled pointer-events-none my-2 block border-x-0 border-b-1 border-t-0 border-transparent  px-1 pb-3.5 pt-4 text-lg font-Inter font-medium  ml-32 leading-tight text-black hover:border-transparent hover:text-white  focus:isolate focus:border-transparent dark:text-neutral-400">
                   why us
                 </a>
               </li>
               <li role="present">
-                <a class=" grid grid-cols-1 md:grid-cols-1 gap-4 disabled pointer-events-none my-2 block border-x-0 border-b-1 border-t-0 border-transparent  px-1 pb-3.5 pt-4 text-sm font-serif  ml-32 leading-tight text-black hover:border-transparent hover:text-white  focus:isolate focus:border-transparent dark:text-neutral-400">
+                <a class=" grid grid-cols-1 md:grid-cols-1 text-white  gap-4 disabled pointer-events-none my-2 block border-x-0 border-b-1 border-t-0 border-transparent  px-1 pb-3.5 pt-4 text-lg font-Inter font-medium  ml-32 leading-tight text-black hover:border-transparent hover:text-white  focus:isolate focus:border-transparent dark:text-neutral-400">
                   services
                 </a>
               </li>
               <li role="present">
-                <a class=" grid grid-cols-1 md:grid-cols-1 gap-4 disabled pointer-events-none my-2 block border-x-0 border-b-1 border-t-0 border-transparent  px-1 pb-3.5 pt-4 text-sm font-serif  ml-32 leading-tight text-black hover:border-transparent hover:text-white  focus:isolate focus:border-transparent dark:text-neutral-400">
+                <a class=" grid grid-cols-1 md:grid-cols-1 text-white  gap-4 disabled pointer-events-none my-2 block border-x-0 border-b-1 border-t-0 border-transparent  px-1 pb-3.5 pt-4 text-lg font-Inter font-medium ml-32 leading-tight text-black hover:border-transparent hover:text-white  focus:isolate focus:border-transparent dark:text-neutral-400">
                   portfolio
                 </a>
               </li>
               <li role="present">
-                <a class=" grid grid-cols-1 md:grid-cols-1 gap-4 disabled pointer-events-none my-2 block border-x-0 border-b-1 border-t-0 border-transparent  px-1 pb-3.5 pt-4 text-sm font-serif  ml-32 leading-tight text-black hover:border-transparent hover:text-white  focus:isolate focus:border-transparent dark:text-neutral-400">
+                <a class=" grid grid-cols-1 md:grid-cols-1 text-white  gap-4 disabled pointer-events-none my-2 block border-x-0 border-b-1 border-t-0 border-transparent  px-1 pb-3.5 pt-4 text-lg font-Inter font-medium  ml-32 leading-tight text-black hover:border-transparent hover:text-white  focus:isolate focus:border-transparent dark:text-neutral-400">
                   careers
                 </a>
               </li>
               <li role="present">
-                <a class=" grid grid-cols-1 md:grid-cols-1 gap-4 disabled pointer-events-none my-2 block border-x-0 border-b-1 border-t-0 border-transparent  px-1 pb-3.5 pt-4 text-sm font-serif  ml-32 leading-tight text-black hover:border-transparent hover:text-white  focus:isolate focus:border-transparent dark:text-neutral-400">
+                <a class=" grid grid-cols-1 md:grid-cols-1 text-white  gap-4 disabled pointer-events-none my-2 block border-x-0 border-b-1 border-t-0 border-transparent  px-1 pb-3.5 pt-4 text-lg font-Inter font-medium ml-32 leading-tight text-black hover:border-transparent hover:text-white  focus:isolate focus:border-transparent dark:text-neutral-400">
                   contact
                 </a>
               </li>
             </ul>
           </p>
         </div>
-      </div> */}
-      {/* <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
-        <div class="bg-red p-4">Row 1, Column 1</div>
-        <div class="bg-green p-4">Row 1, Column 2</div> 
-        <div class="bg-black text-white p-4">
+        <hr class="h-px my-0 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+
+        <div class="bg-red-500 text-white ">
           <ul
             class="mb-5 flex list-none flex-row flex-wrap border-b-0 pl-0 text-right"
             role="navlist"
           >
             <li role="present">
               <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
+                viewBox="0 0 1024 1024"
                 xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-                class="w-5 h-9 ml-28 mt-5"
+                class="w-5 h-9 ml-20 mt-5"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                  fill="white"
+                  d="M288 896h448q32 0 32 32t-32 32H288q-32 0-32-32t32-32z"
                 ></path>
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                  fill="white"
+                  d="M800 416a288 288 0 1 0-576 0c0 118.144 94.528 272.128 288 456.576C705.472 688.128 800 534.144 800 416zM512 960C277.312 746.688 160 565.312 160 416a352 352 0 0 1 704 0c0 149.312-117.312 330.688-352 544z"
+                ></path>
+                <path
+                  fill="white"
+                  d="M544 384h96a32 32 0 1 1 0 64h-96v96a32 32 0 0 1-64 0v-96h-96a32 32 0 0 1 0-64h96v-96a32 32 0 0 1 64 0v96z"
                 ></path>
               </svg>
               Address
             </li>
             <li role="present">
               <svg
+                width="45"
+                height="45"
+                viewBox="0 0 48 48"
+                class="w-5 h-9 ml-20 mt-5"
                 fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-                class="w-5 h-9 ml-24 mt-5"
               >
                 <path
+                  d="M44 24V9H24H4V24V39H24"
+                  stroke="#333"
+                  stroke-width="1"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="M21.75 9v.906a2.25 2.25 0 01-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 001.183 1.981l6.478 3.488m8.839 2.51l-4.66-2.51m0 0l-1.023-.55a2.25 2.25 0 00-2.134 0l-1.022.55m0 0l-4.661 2.51m16.5 1.615a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V8.844a2.25 2.25 0 011.183-1.98l7.5-4.04a2.25 2.25 0 012.134 0l7.5 4.04a2.25 2.25 0 011.183 1.98V19.5z"
+                  fill="white"
                 ></path>
               </svg>
               mail
             </li>
-          </ul>
-        </div>
-        <div class="bg-blue p-4 flex flex-row-reverse ...">
-          <ul
-            class="mb-5 flex list-none flex-row flex-wrap border-b-0 pl-0  text-right"
-            role="navlist"
-          >
             <li role="present">
               <svg
-                class="w-6 h-6 mt-8 mr-12 text-blue-500 fill-current"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="w-5 h-9 ml-20 mt-5"
+                viewBox="0 0 16 16"
               >
-                <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+                {" "}
+                <path
+                  fill-rule="evenodd"
+                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0z"
+                  fill="white"
+                ></path>{" "}
               </svg>
-            </li>
-            <li role="present">
-              <svg
-                class="w-6 h-6 mt-8 mr-12 text-blue-300 fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-              >
-                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
-              </svg>
+              Phone
             </li>
           </ul>
+          <hr class="h-px my-2 bg-gray-200 border-1 dark:bg-gray-700"></hr>
+          <div className="flex items-center justify-end mr-32 mt-12 ">
+            <ul class="flex space-x-4 mb-5 flex list-none flex-row flex-wrap border-b-0 pl-0">
+              <li className="bg-white rounded-full   ">
+                <a href="#" class="text-gray-500  hover:text-gray-700">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="24"
+                    fill="currentColor"
+                    class="bi bi-twitter color white "
+                    viewBox="0 0 16 16"
+                  >
+                    {" "}
+                    <path
+                      d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                      fill="red"
+                    ></path>{" "}
+                  </svg>
+                </a>
+              </li>
+              <li className=" bg-white rounded-full ">
+                <a href="#" class="text-gray-500 hover:text-gray-700">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="24"
+                    fill="currentColor"
+                    class="bi bi-facebook color white "
+                    viewBox="0 0 16 16"
+                  >
+                    {" "}
+                    <path
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                      fill="red"
+                    ></path>{" "}
+                  </svg>
+                </a>
+              </li>
+              <li className=" bg-white rounded-full  ">
+                <a href="#" class="text-gray-500 hover:text-gray-700">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="18"
+                    fill="currentColor"
+                    class="bi bi-linkedin"
+                    viewBox="0 0 16 16"
+                  >
+                    {" "}
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                      fill="red"
+                    ></path>{" "}
+                  </svg>
+                </a>
+              </li>
+
+              <li className=" bg-white rounded-full  ">
+                <a href="#" class="text-gray-500 hover:text-gray-700">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="24"
+                    fill="currentColor"
+                    class="bi bi-google"
+                    viewBox="0 0 16 16"
+                  >
+                    {" "}
+                    <path
+                      d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"
+                      fill="red"
+                    ></path>{" "}
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div> */}
+      </footer>
     </div>
   );
 }

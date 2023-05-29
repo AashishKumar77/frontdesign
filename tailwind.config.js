@@ -19,6 +19,9 @@ module.exports = {
         redLight: "#FFF9F9",
         green: " #00FF00",
         offwhite: "#F5F5F5",
+        cream: {
+          500: "#FEEEEF",
+        },
       },
     },
   },
