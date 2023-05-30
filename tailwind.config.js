@@ -9,7 +9,9 @@ module.exports = {
         black: "#000000",
         yellow: "#FFFF00",
         white: " #FFFFFF",
-        gray: "#f9fafb",
+        gray: {
+          500: "#f9fafb",
+        },
         red: {
           500: "#ED1C24",
         },
